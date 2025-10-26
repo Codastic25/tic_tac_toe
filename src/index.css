@@ -37,21 +37,29 @@ h1 {
 
 button {
   border-radius: 0px;
-  border: 1px solid black;
+  border: 1px solid #1ac436;
   padding: 0.6em 1.2em;
-  font-size: 3em;
+  font-size: 60px;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1818;
+  background-color: #000000;
   cursor: pointer;
   transition: border-color 0.25s;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  color: #1ac436;
+  
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #1ac436;
 }
 button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+button:focus-visible,
+button:active {
+  transform: none; /* empêche le léger déplacement visuel */
+  position: relative;
+  top: 0; /* bloque tout décalage vertical */
 }
 
 @media (prefers-color-scheme: light) {
