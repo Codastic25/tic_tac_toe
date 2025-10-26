@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 1);
-  background-color: #242424;
+  background-color: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,21 +36,15 @@ h1 {
 }
 
 button {
-  border-radius: 0px;
-  border: 1px solid #1ac436;
-  padding: 0.6em 1.2em;
-  font-size: 60px;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #000000;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 0.5em 1em;
   cursor: pointer;
-  transition: border-color 0.25s;
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  color: #1ac436;
-  
+  font-size: 16px;
 }
+  
 button:hover {
   border-color: #1ac436;
 }

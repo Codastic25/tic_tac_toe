@@ -9,3 +9,76 @@
   font-size: 4em;
   padding-bottom: 20px;
 }
+
+.square {
+  position: relative;
+  top: 0;
+  box-sizing: border-box;
+  border-radius: 0px;
+  border: 1px solid #1ac436;
+  padding: 0.6em 1.2em;
+  font-size: 60px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #000000;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  color: #1ac436;
+}
+.square:hover {
+  border-color: #1ac436;
+}
+.square:focus,
+.square:focus-visible,
+.square:active {
+  transform: none;
+  position: relative;
+  top: 0;
+}
+
+.board_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* espace entre la grille et la colonne de boutons */
+}
+
+/* le plateau du jeu (grille 3x3) */
+.game_app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* les boutons (historique) à droite */
+.game_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* style plus petit pour ces boutons */
+.game_info button {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  padding: 0.5em 1em;
+  background-color: #1a1818;
+  border: 1px solid #1ac436;
+  color: #1ac436;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.game_info button:hover {
+  border-color: #28e14f;
+}
